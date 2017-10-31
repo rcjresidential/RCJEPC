@@ -6,9 +6,18 @@
     color: white;
 }
 
+.bottomblock p {
+    font-size: 0.7em;
+}
+
 footer {
     background-color: #333745;
     font-size: 0.5em;
-    text-align: right;
+    text-align: center;
+}
+
+.jumbotron {
+    background-image: url(Images/hpcar/hpcar4a.png) ;
+    background-size: cover;
 }
 
