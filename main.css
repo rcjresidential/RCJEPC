@@ -1,10 +1,57 @@
-.card-img-top {
-    border-radius: 10%;
+body {
+    background-color: #BFD7EE;
+    color: #333745;
+    
+}
+
+h1 {
+  font-weight: 800;
+}
+
+h2, h3 {
+  font-weight: 600;
+}
+
+p {
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 2em
+}
+
+.priceSmall {
+    font-size: 0.6em
+}
+
+.topSection {
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.h1Header {
+    padding-bottom: 10%;
+}
+
+.newSection {
+    margin-top: 8%;
+    margin-bottom: 15%;
+}
+
+.doubleTier {
+    padding-top: 13%;
+}
+
+.thumbnailGap {
+    padding-top:8%;
+}
+
+.container {
+    width: 90%;
 }
 
 .bottomblock {
     color: white;
 }
+
 
 .bottomblock p {
     font-size: 0.7em;
@@ -16,8 +63,34 @@ footer {
     text-align: center;
 }
 
-.jumbotron {
-    background-image: url(Images/hpcar/hpcar4a.png) ;
-    background-size: cover;
+.material-icons.md-48 {
+    font-size: 48px; 
 }
 
+.metroPixPad {
+    padding-bottom: 5%;
+}
+
+hr {
+  width: 15%;
+  border: 0;
+  border-top: 1px solid #031D44;
+}
+
+#map {       
+  height: 400px;
+  width: 100%;
+}
+
+
+footer {
+    background-color: #031D44;
+}
+
+ul{ 
+    list-style-type: none;
+} 
+
+.contactInfo {
+    text-emphasis: 
+}
