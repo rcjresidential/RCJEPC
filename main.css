@@ -42,12 +42,21 @@ p {
 }
 
 .newSection {
-    margin-top: 8%;
+    margin-top: 10%;
     margin-bottom: 15%;
 }
 
 .doubleTier {
-    padding-top: 11%;
+    margin-top: 15%;
+}
+
+.buttonTier {
+    margin-top: 10%;
+}
+
+.photogCarousel {
+    border: 2px #333745 solid;
+    border-radius: 5%;
 }
 
 .thumbnailGap {
@@ -81,6 +90,14 @@ footer {
     padding-bottom: 5%;
 }
 
+.services {
+    margin-bottom: 15%;
+}
+
+.getInTouch {
+    margin-bottom: 10%;
+}
+
 hr {
   width: 15%;
   border: 0;
@@ -101,6 +118,16 @@ ul{
     list-style-type: none;
 } 
 
-.contactInfo {
-    text-emphasis: 
+.contact-section {
+    background-color: #333745;
+    color: white;
+}
+
+.checkBxs {
+    display: inline-block;
+}
+
+.contactSection {
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
