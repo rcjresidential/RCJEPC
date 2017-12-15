@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <meta name="description" content="EPC Energy Performance Certificates, Floor Plans, Property Photography - Sheffield, Rotherham, Doncaster, Chesterfield, Worksop and South Yorkshire" />
   <title>RCJ Residential - EPCs, Photography and Floorplans</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -240,7 +241,7 @@
           <h4>07736 792 133</h4>
 
 
-          <i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i><p>...by email</p><h4><a href="mailto:rich@richmail.com">rcjresidential@gmail.com</a></h4>
+          <i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i><p>...by email</p><h4><a href="mailto:rcjresidential@gmail.com">rcjresidential@gmail.com</a></h4>
         </div>
       </div>
     </div>
@@ -252,7 +253,8 @@
     <div class="row">
       <div class="col-md-6 col-12 offset-md-3">
 
-       <form action="#" method="post">
+       <form action="https://formspree.io/rcjresidential@gmail.com"
+      method="POST">
         <div class="row">
           <div class="col-sm-6 form-group">
             <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
@@ -261,22 +263,22 @@
             <input class="form-control" id="phone" name="phone" placeholder="Phone Number" type="text">
           </div>  
         </div>
-        <input class="form-control" id="email" name="_replyto" placeholder="Email" type="email" row="5" required><br>
+        <input class="form-control" id="email" name="email" placeholder="Email" type="email" row="5" required><br>
         <div class="form-group">
           <label for="exampleFormControlSelect1">Which service do you require?</label>
           <br>
           <div class="checkBxs">
             <input type="checkbox" id="coding" name="interest" value="coding" checked>
-            <label for="coding">Epcs</label>
+            <label name="epc" for="coding">Epcs</label>
           </div>
 
           <div class="checkBxs">
             <input type="checkbox" id="coding" name="interest" value="coding" checked>
-            <label for="coding">Floorplans</label>
+            <label name="floorplans" for="coding">Floorplans</label>
           </div>
           <div class="checkBxs">
             <input type="checkbox" id="coding" name="interest" value="coding" checked>
-            <label for="coding">Photography</label>
+            <label name="photography" for="coding">Photography</label>
           </div>
         </div>
         <textarea class="form-control" id="comments" name="comments" placeholder="Comments" rows="5"></textarea><br>
