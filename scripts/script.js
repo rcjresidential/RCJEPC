@@ -10,10 +10,10 @@ $('a[href*="#"]')
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
       && 
       location.hostname == this.hostname
-    ) {
+      ) {
       // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       // Does a scroll target exist?
       if (target.length) {
         // Only prevent default if animation is actually gonna happen
@@ -36,26 +36,25 @@ $('a[href*="#"]')
     }
   });
 
-var citymap = {
-  southYorkshire: {
-    center: {lat: 
-53.4241557, lng: -1.4067366},
-    population: 90000
-  },
-};
+  var citymap = {
+    southYorkshire: {
+      center: {lat: 53.4241557, lng: -1.4067366},
+      population: 90000
+    },
+  };
 
-function initMap() {
-        var uluru = {lat: 53.4241557, lng: -1.4067366};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 9,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
+  function initMap() {
+    var uluru = {lat: 53.4241557, lng: -1.4067366};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 9,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
 
-for (var city in citymap) {
+    for (var city in citymap) {
     // Add the circle for this city to the map.
     var cityCircle = new google.maps.Circle({
       strokeColor: '#FF0000',

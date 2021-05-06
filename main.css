@@ -28,6 +28,14 @@ p {
     line-height: 2em
 }
 
+.afterSection {
+    margin-bottom: 50px;
+}
+
+.beforeSection {
+    padding-top: 50px;
+}
+
 .priceSmall {
     font-size: 0.6em
 }
@@ -77,9 +85,14 @@ p {
 }
 
 
+.epcLogo {
+    max-width: 320px;
+    float: center;
+}
+
 .stromaLogo {
-    width: 320;
-    height: 120;
+    max-width: 320px;
+    float: center;
 }
 
 .bottomblock p {
@@ -97,7 +110,7 @@ footer {
 }
 
 .metroPixPad {
-    padding-bottom: 5%;
+    padding-bottom: 50px;
 }
 
 .services {
@@ -139,5 +152,5 @@ ul{
 
 .contactSection {
     margin-top: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 50px;
 }
