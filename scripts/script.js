@@ -36,35 +36,4 @@ $('a[href*="#"]')
     }
   });
 
-  var citymap = {
-    southYorkshire: {
-      center: {lat: 53.4241557, lng: -1.4067366},
-      population: 90000
-    },
-  };
-
-  function initMap() {
-    var uluru = {lat: 53.4241557, lng: -1.4067366};
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 9,
-      center: uluru
-    });
-    var marker = new google.maps.Marker({
-      position: uluru,
-      map: map
-    });
-
-    for (var city in citymap) {
-    // Add the circle for this city to the map.
-    var cityCircle = new google.maps.Circle({
-      strokeColor: '#FF0000',
-      strokeOpacity: 0.8,
-      strokeWeight: 2,
-      fillColor: '#FF0000',
-      fillOpacity: 0.35,
-      map: map,
-      center: citymap[city].center,
-      radius: Math.sqrt(citymap[city].population) * 100
-    });
-  }
-}
+  
