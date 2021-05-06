@@ -9,6 +9,40 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="main.css" type="text/css">
 	<script src="https://use.fontawesome.com/f198f1311a.js"></script>
+	<script>
+		var citymap = {
+	    southYorkshire: {
+	      center: {lat: 53.4241557, lng: -1.4067366},
+	      population: 90000
+	    },
+	  };
+
+	  function initMap() {
+	    var uluru = {lat: 53.4241557, lng: -1.4067366};
+	    var map = new google.maps.Map(document.getElementById('map'), {
+	      zoom: 9,
+	      center: uluru
+	    });
+	    var marker = new google.maps.Marker({
+	      position: uluru,
+	      map: map
+	    });
+
+	    for (var city in citymap) {
+	    // Add the circle for this city to the map.
+	      var cityCircle = new google.maps.Circle({
+	        strokeColor: '#FF0000',
+	        strokeOpacity: 0.8,
+	        strokeWeight: 2,
+	        fillColor: '#FF0000',
+	        fillOpacity: 0.35,
+	        map: map,
+	        center: citymap[city].center,
+	        radius: Math.sqrt(citymap[city].population) * 100
+	      });
+	    }
+	  }
+	</script>
 </head>
 
 <body>
@@ -325,7 +359,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <script src="scripts/jquery.js"></script>
 <script src="scripts/script.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqMPntJvhMbuBfcNjbgEzTj5U4KI2mKmU&callback=initMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqMPntJvhMbuBfcNjbgEzTj5U4KI2mKmU&callback=initMap&libraries=&v=weekly" async></script>
 </body>
 
 </html>
